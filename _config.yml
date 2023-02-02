@@ -20,7 +20,6 @@
 
 title: Brody Lab Wiki
 description: Public facing wiki for the Brody Lab
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://brody-lab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brody_lab
 github_username:  Brody-Lab
@@ -28,7 +27,14 @@ github_username:  Brody-Lab
 # Build settings
 theme: jekyll-theme-minimal
 plugins:
+  - jekyll-relative_links
   - jekyll-feed
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - NEW-MEMBERS.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
